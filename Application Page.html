@@ -1,0 +1,166 @@
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Application Page</title>
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<style>
+		body 
+		{
+	background-color: #c0e6f0;
+	color: Blue;
+	font-family: Cambria, arial, Times, serif;
+		}
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.button1 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #4CAF50;
+}
+
+.button1:hover {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.button2 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #008CBA;
+}
+
+.button2:hover {
+  background-color: #008CBA;
+  color: white;
+}
+
+.button3 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #f44336;
+}
+
+.button3:hover {
+  background-color: #f44336;
+  color: white;
+}
+
+.button4 {
+  background-color: white;
+  color: black;
+  border: 2px solid #e7e7e7;
+}
+
+.button4:hover {background-color: #e7e7e7;}
+
+.button5 {
+  background-color: white;
+  color: black;
+  border: 2px solid #555555;
+}
+
+.button5:hover {
+  background-color: #555555;
+  color: white;
+}
+#demo {
+  width: 1000px;
+}
+</style>
+<body>
+<table width="1639" border="0" align="center">
+  <tr>
+    <td width="120"><div class="topnav">
+      <input type="text" placeholder="Search.." />
+    </div></td>
+    <td width="101" height="105">  <div class="Search-Bar"></td>
+    <td width="1101">  <div class="Buttons-"><button class="button button1" onclick="location.href='Homepage.html'">Homepage</button>
+<button class="button button2" onclick="location.href='Company Profile.html'">Company Profile</button>
+<button class="button button3" onclick="location.href='Employee Profile.html'">Employee Profile</button>
+<button class="button button4" onclick="location.href='Employment Page.html'">Employment Page</button>
+<button class="button button5" onclick="location.href='Application Page.html'">Application Page</button>
+</div></td>
+    <td width="299">  <div class="Logo">      <div class="item"><img src="logo.jpg" alt="New york" style="width:300px; height:200px""></div></td>
+  </tr>
+  <tr>
+    <td height="98"></td>
+    <td height="98">&nbsp;</td>
+    <td rowspan="2"><form action="//submit.form" id="EmploymentApplication100" method="post" onsubmit="return ValidateForm(this);">
+<script type="text/javascript">
+function ValidateForm(frm) {
+if (frm.First_Name.value == "") { alert('First name is required.'); frm.First_Name.focus(); return false; }
+if (frm.Last_Name.value == "") { alert('Last name is required.'); frm.Last_Name.focus(); return false; }
+if (frm.Email_Address.value == "") { alert('Email address is required.'); frm.Email_Address.focus(); return false; }
+if (frm.Email_Address.value.indexOf("@") < 1 || frm.Email_Address.value.indexOf(".") < 1) { alert('Please enter a valid email address.'); frm.Email_Address.focus(); return false; }
+if (frm.Phone.value == "") { alert('Phone is required.'); frm.Phone.focus(); return false; }
+if (frm.Position.value == "") { alert('Position is required.'); frm.Position.focus(); return false; }
+return true; }
+</script>
+<table border="0" cellpadding="5" cellspacing="0">
+<tr> <td style="width: 50%">
+<label for="First_Name"><b>First name *</b></label><br />
+<input name="First_Name" type="text" maxlength="50" style="width:100%;max-width: 260px" />
+</td> <td style="width: 50%">
+<label for="Last_Name"><b>Last name *</b></label><br />
+<input name="Last_Name" type="text" maxlength="50" style="width:100%;max-width: 260px" />
+</td> </tr> <tr> <td colspan="2">
+<label for="Email_Address"><b>Email *</b></label><br />
+<input name="Email_Address" type="text" maxlength="100" style="width:100%;max-width: 535px" />
+</td> </tr> <tr> <td colspan="2">
+<label for="Phone"><b>Phone *</b></label><br />
+<input name="Phone" type="text" maxlength="100" style="width:100%;max-width: 535px" />
+</td> </tr> <tr> <td colspan="2">
+<label for="Position"><b>Position you are applying for *</b></label><br />
+<input name="Position" type="text" maxlength="100" style="width:100%;max-width: 535px" />
+</td> </tr> <tr> <td>
+<label for="Salary"><b>Salary requirements</b></label><br /> <input name="Salary" type="text" maxlength="50" style="width:100%;max-width: 260px" /> </td> <td>
+<label for="StartDate"><b>When can you start?</b></label><br />
+<input name="StartDate" type="text" maxlength="50" style="width:100%;max-width: 260px" />
+</td> </tr> <tr> <td>
+</td> <td>
+</td> </tr> <tr> <td colspan="2">
+<label for="Relocate"><b>Are you willing to relocate?</b></label><br />
+<input name="Relocate" type="radio" value="Yes" checked="checked" /> Yes      
+<input name="Relocate" type="radio" value="No" /> No      
+<input name="Relocate" type="radio" value="NotSure" /> Not sure
+</td> </tr> <tr> <td colspan="2">
+<label for="Organization"><b>Attained grades at GCSE:</b></label><br />
+<input name="Organization" type="text" maxlength="100" style="width:100%;max-width: 535px" />
+</td> </tr> <tr> <td colspan="2">
+<label for="Reference"><b>Additional Comments</b></label><br />
+<textarea name="Reference" rows="7" cols="40" style="width:100%;max-width: 535px"></textarea>
+</td> </tr> <tr> <td colspan="2" style="text-align: center;">
+<div style="float: right">
+<input name="skip_submit" type="submit" value="Send Application" />
+</td> </tr>
+</table>
+</form></td>
+  </tr></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td height="539">&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+</table>
+</body>
+</html>
